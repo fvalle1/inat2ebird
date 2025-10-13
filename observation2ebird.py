@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 import requests
-import urllib.parse
 import sys
-import time
 from datetime import datetime
 from dataclasses import dataclass
-import dataclasses
-import pandas as pd
 import csv
 import os 
 
@@ -17,8 +13,6 @@ quantity_on_hand: int = 0
 country_dict = {"Brasil": "BR", "Espanha": "ES"}
 
 import os
-
-from ebird.api.requests import get_observations
 
 # It is a good idea to store secrets in environment variables 
 # (but if you don't commit, you can add it as a string here too)
