@@ -1,10 +1,6 @@
-import requests
 from flask import Flask, request, render_template_string, redirect, url_for, flash
-import pandas as pd
 from werkzeug.utils import secure_filename
 import os
-from io import StringIO
-import csv
 from user2ebird import *
 from observation2ebird import *
 

@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
 import requests
-import urllib.parse
 import sys
-import time
 from datetime import datetime
 from dataclasses import dataclass
-import dataclasses
-import pandas as pd
 import csv
-import os 
+import os
 
 name: str
 unit_price: float
@@ -18,11 +14,10 @@ country_dict = {"Brasil": "BR", "Espanha": "ES"}
 
 import os
 
-from ebird.api.requests import get_observations
-
-# It is a good idea to store secrets in environment variables 
+# It is a good idea to store secrets in environment variables
 # (but if you don't commit, you can add it as a string here too)
 EBIRD_API_KEY = os.environ["EBIRD_API_KEY"]
+
 
 @dataclass
 class eBirdEntry:
